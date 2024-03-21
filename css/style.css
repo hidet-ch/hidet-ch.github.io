@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto;
+  height: 100vh;
+  background: #ddd;
+}
+
+header .grid,
+.container,
+.inner,.copyright {
+  display: grid;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header .grid {
+  grid-template-columns: 1fr 250px;
+}
+.container {
+  grid-template-columns: 1fr;
+  gap: 10px;
+  background-color: #ddd;
+}
+.inner {
+  margin: 0 auto;
+}
+
+.bar {
+  background: #0000ff;
+  width: 100%;
+  height: 30px;
+}
+.bar .inner{
+  color: #fff;
+}
+header {
+  background: #fff
+  url(../images/bg02.jpg)
+  no-repeat center;
+  border-bottom: #ccc solid 1px;
+}
+
+.title {
+  order: 1;
+}
+.title img{
+  max-width: 500px;
+}
+
+.h_info {
+  order: 2;
+  padding-top: 0px;
+  margin-bottom: -10px;
+  text-align: center;
+}
+
+.main {
+  order: 2;
+  padding: 10px 30px;
+  background: #fff;
+}
+
+footer {
+  background: #6f4b3e;
+  color: #fff;
+}
+
+footer .inner{
+  padding: 15px 0px 15px 0px;
+}
+.copyright {
+  margin: 0 auto;
+  color: #fff;
+}
+
+/* 768px以下のデバイス設定 */
+@media(max-width: 768px) {
+  .container,
+  header .grid {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    background: #ffe4c4;;
+  }
+}
