@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 body {
   margin: 0;
   padding: 0;
@@ -26,6 +25,10 @@ header .grid {
   grid-template-columns: 1fr;
   gap: 10px;
   background-color: #ddd;
+}
+img:hover{
+	opacity:0.6;
+	transition:0.3s;
 }
 .inner {
   margin: 0 auto;
